@@ -1,0 +1,61 @@
+@import "tailwindcss";
+@config "../tailwind.config.ts";
+
+:root { color-scheme: dark; }
+
+body {
+  margin: 0;
+  background: #161826;
+  color: #e9e9ed;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-weight: 500;
+  line-height: 1.12;
+  letter-spacing: -0.015em;
+  margin: 0;
+}
+
+.text-muted { color: color-mix(in srgb, #e9e9ed 55%, transparent); }
+
+:focus { outline: none; }
+:focus-visible { outline: 2px solid #9184d9; outline-offset: 2px; }
+::selection { background: color-mix(in srgb, #9184d9 30%, transparent); }
+
+/* Rendered-Markdown prose — scoped to .md, values from Nocturne tokens */
+.md { color: #e9e9ed; font-size: 15px; line-height: 1.62; }
+.md > :first-child { margin-top: 0; }
+.md h1 { font-size: 27px; font-weight: 500; letter-spacing: -0.015em; margin: 1.4em 0 0.5em; }
+.md h2 { font-size: 21px; font-weight: 500; letter-spacing: -0.015em; margin: 1.4em 0 0.5em; }
+.md h3 { font-size: 17px; font-weight: 500; margin: 1.3em 0 0.4em; }
+.md h4, .md h5, .md h6 { font-size: 15px; font-weight: 600; margin: 1.2em 0 0.3em; }
+.md p { margin: 0 0 0.9em; }
+.md ul, .md ol { margin: 0 0 0.9em; padding-left: 1.4em; }
+.md li { margin: 0.2em 0; }
+.md li::marker { color: #9184d9; }
+.md a { color: #d2cefd; text-decoration: underline; text-underline-offset: 2px; }
+.md strong { font-weight: 600; color: #f3f5fe; }
+.md code {
+  font-family: ui-monospace, 'SF Mono', Menlo, monospace; font-size: 0.88em;
+  background: #232532; border: 1px solid rgba(233,233,237,0.16);
+  border-radius: 4px; padding: 0.08em 0.34em;
+}
+.md pre {
+  background: #232532; border: 1px solid rgba(233,233,237,0.16);
+  border-radius: 8px; padding: 14px; overflow: auto;
+}
+.md pre code { background: none; border: 0; padding: 0; }
+.md blockquote {
+  margin: 0 0 0.9em; padding: 0.1em 0 0.1em 1em;
+  border-left: 3px solid #9184d9; color: color-mix(in srgb, #e9e9ed 70%, transparent);
+}
+.md hr { border: 0; border-top: 1px solid rgba(233,233,237,0.16); margin: 1.4em 0; }
+.md table { width: 100%; border-collapse: collapse; margin: 0 0 1em; font-size: 14px; }
+.md th, .md td { text-align: left; padding: 7px 12px; border-bottom: 1px solid rgba(233,233,237,0.16); }
+.md thead th { color: color-mix(in srgb, #e9e9ed 70%, transparent); font-weight: 600; border-bottom-color: rgba(233,233,237,0.32); }
