@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.3",
+    "@vercel/analytics": "^2.0.1",
     "gpt-tokenizer": "^2.5.0",
     "pdfjs-dist": "^4.7.76",
     "react": "^18.3.1",
